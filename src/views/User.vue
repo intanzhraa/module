@@ -11,14 +11,15 @@
             </thead>
             <tbody>
                 <tr v-for="user in getUsers" :key="user.id">
-                <td class="border px-4 py-2">{{ user.id }}</td>
-                <td class="border px-4 py-2">{{ user.name }}</td>
-                <td class="border px-4 py-2">{{ user.Address }}</td>
+                    <td class="border px-4 py-2">{{ user.id }}</td>
+                    <td class="border px-4 py-2">{{ user.name }}</td>
+                    <td class="border px-4 py-2">{{ user.address }} {{ user.address.city }} {{ user.address.zipcode }}</td>
                 </tr>
             </tbody>
         </table>
     </div>
 </template>
+
 <script>
 import { mapGetters, mapActions } from 'vuex';
 

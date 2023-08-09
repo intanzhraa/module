@@ -5,6 +5,7 @@ import transaksi from "./modules/transaksi";
 import users from "./modules/users";
 import berita from "./modules/berita";
 import product from "./modules/product";
+import category from "./modules/category";
 
 const store = createStore({
     state: {
@@ -17,6 +18,7 @@ const store = createStore({
         users,
         berita,
         product,
+        category,
     },
 });
 
