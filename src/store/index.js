@@ -4,18 +4,20 @@ import clients from "./modules/clients";
 import transaksi from "./modules/transaksi";
 import users from "./modules/users";
 import berita from "./modules/berita";
+import product from "./modules/product";
 
 const store = createStore({
-  state: {
-    isLoading: false,
-  },
-  modules: {
-    donatur,
-    clients,
-    transaksi,
-    users,
-    berita
-  },
+    state: {
+        isLoading: false,
+    },
+    modules: {
+        donatur,
+        clients,
+        transaksi,
+        users,
+        berita,
+        product,
+    },
 });
 
 export default store;
